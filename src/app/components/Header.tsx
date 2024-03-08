@@ -3,19 +3,21 @@ export default function Header() {
     <header className='flex justify-between items-center px-8 h-[8vh]'>
       <div>
         <a href='#'>
-          <h1 className='text-concrete-900 text-2xl'>digi_closet</h1>
+          <h1 className='text-concrete-900 dark:text-concrete-50 text-2xl'>
+            digi_closet
+          </h1>
         </a>
       </div>
       <nav className='flex gap-8 my-4 items-center'>
         <a
           href='#about'
-          className='text-lg text-concrete-700 hover:text-concrete-900 transition-colors duration-300'
+          className='text-lg text-concrete-700 dark:text-concrete-50 hover:text-concrete-900 dark:hover:text-concrete-200 transition-colors duration-300'
         >
           demo
         </a>
         <a
           href='#about'
-          className='text-lg text-concrete-700 hover:text-concrete-900 transition-colors duration-300'
+          className='text-lg text-concrete-700 dark:text-concrete-50 hover:text-concrete-900 dark:hover:text-concrete-200 transition-colors duration-300'
         >
           about
         </a>
