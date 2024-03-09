@@ -1,19 +1,20 @@
-import Clothes from "@/app/ui/Clothes";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className='md:h-screen w-full flex flex-col justify-around test-concrete-900 dark:text-concrete-50 md:pt-12 md:animate-fadeIn'>
-      <div className='flex flex-col justify-center items-center gap-4 p-32'>
-        <h1 className='text-3xl md:text-4xl lg:text-5xl'>
+      <div className='flex flex-col justify-center items-center gap-4'>
+        <h1 className='text-2xl md:text-4xl lg:text-5xl'>
           your personal, digital wardrobe
         </h1>
         <h2 className='text-lg md:text-xl lg:text-2xl'></h2>
-        <div
-          className='w-[380px] h-[228px] md:w-[700px] md:h-[420px] lg:w-[1000px] lg:h-[600px]
-           bg-ice-100 flex items-center justify-center shadow-2xl px-8 pt-4 relative'
-        >
-          <Clothes />
-        </div>
+        <Image
+          src='/hero_mac.png'
+          alt='wardrobe on mac'
+          width={2115}
+          height={1386}
+          className='w-[400px] h-[262] md:w-[800px] md:h-[524px]'
+        />
       </div>
     </section>
   );
