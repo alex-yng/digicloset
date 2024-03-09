@@ -13,7 +13,7 @@ export default function MobileNav() {
       id='mobile nav'
       className='dark:text-concrete-100 dark:bg-slate-800 w-screen'
     >
-      <div id='navlinks' className='flex justify-around items-center h-64 p-2'>
+      <div id='navlinks' className='flex justify-around h-32 pt-4'>
         <NavLinks links={links} />
       </div>
     </section>
