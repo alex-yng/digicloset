@@ -1,5 +1,6 @@
 "use client";
 
+import FormInput from "@/shared/FormInput";
 import Link from "next/link";
 
 export default function LoginForm() {
@@ -8,26 +9,26 @@ export default function LoginForm() {
   };
 
   return (
-    <form className='size-96 bg-concrete-600 dark:bg-slate-800 rounded-xl shadow-2xl flex flex-col p-4 gap-4 justify-center items-center animate-slideFromLeft'>
-      <h1 className='text-5xl text-center'>Sign In</h1>
-      <h3 className='text-base text-center'>
+    <form className='size-96 bg-concrete-600 dark:bg-slate-800 rounded-xl shadow-2xl flex flex-col p-4 gap-4 justify-center items-center'>
+      <h1 className='text-5xl text-center animate-slideFromTop'>Sign In</h1>
+      <h3 className='text-base text-center animate-slideFromTop'>
         Sign in and get access your wardrobe now
       </h3>
-      <input
+      <FormInput
         id='username'
         type='text'
         placeholder='Username'
-        required
-        className='px-2 py-1 outline-transparent rounded-xl bg-slate-600 hover:bg-slate-700 w-4/5 transition-colors duration-300'
+        required={true}
+        className='animate-slideFromTop'
       />
-      <input
+      <FormInput
         id='password'
         type='password'
         placeholder='Password'
-        required
-        className='px-2 py-1 outline-transparent rounded-xl bg-slate-600 hover:bg-slate-700 w-4/5 transition-colors duration-300'
+        required={true}
+        className='animate-slideFromTop'
       />
-      <div className='flex items-center gap-2 hover:text-concrete-300 transition-colors duration-300'>
+      <div className='flex items-center gap-2 hover:text-concrete-300 transition-colors duration-300 animate-slideFromTop'>
         <input
           type='checkbox'
           name='remember'
@@ -39,11 +40,17 @@ export default function LoginForm() {
         </label>
       </div>
       <button
-        className='bg-ice-500 w-4/5 px-4 py-2 rounded-xl hover:bg-ice-600 transition-colors duration-300'
+        className='bg-ice-500 w-4/5 px-4 py-2 rounded-xl hover:bg-ice-600 transition-colors duration-300 animate-slideFromTop'
         onClick={(e) => handleLogin}
       >
         <Link href='/dashboard'>Login</Link>
       </button>
+      <Link
+        href='/register'
+        className='text:xs md:text-sm text-concrete-900 dark:text-sage-50 dark:hover:text-concrete-300 transition-colors duration-300'
+      >
+        Don't have an acount? Register here.
+      </Link>
     </form>
   );
 }

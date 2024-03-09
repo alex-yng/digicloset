@@ -80,14 +80,29 @@ const config: Config = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        slideFromTop: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        slideFromRight: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        slideFromBottom: {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
         slideFromLeft: {
-          "0%": { transform: "translateX(-50%)" },
+          "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(0)" },
         },
       },
       animation: {
         fadeIn: "fadeIn 1.5s linear",
-        slideFromLeft: "slideFromLeft 0.5s",
+        slideFromTop: "slideFromTop 1s cubic-bezier(.12,.67,.73,1.04)",
+        slideFromRight: "slideFromRight 1s cubic-bezier(.12,.67,.73,1.04)",
+        slideFromBottom: "slideFromBottom 1s cubic-bezier(.12,.67,.73,1.04)",
+        slideFromLeft: "slideFromLeft 1s cubic-bezier(.12,.67,.73,1.04)",
       },
     },
   },

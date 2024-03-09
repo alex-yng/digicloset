@@ -25,7 +25,7 @@ export default function Header() {
         </a>
         <Link href='/login'>
           <button className='text-sm md:text-base bg-sage-500 hover:bg-sage-600 dark:bg-ice-400 dark:hover:bg-ice-500 text-white font-bold py-2 px-4 rounded transition-colors duration-300'>
-            join now
+            login
           </button>
         </Link>
       </nav>

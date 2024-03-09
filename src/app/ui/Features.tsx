@@ -6,7 +6,7 @@ export default function Features() {
       id='features'
       className='w-full container mx-auto mt-32 p-8 text-concrete-900 dark:text-concrete-50 flex flex-col items-center'
     >
-      <h1 className='text-concrete-950 dark:text-sage-50 text-2xl w-50% my-8 text-center'>
+      <h1 className='text-concrete-950 dark:text-sage-50 text-2xl md:text-4xl w-50% my-8 text-center'>
         No more procrastinating your day thinking about what to wear,
       </h1>
       <div className='my-16 grid grid-cols-3 md:gap-0 gap-8'>
