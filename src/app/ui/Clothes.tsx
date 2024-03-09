@@ -1,46 +1,60 @@
+import Image from "next/image";
+
 export default function Clothes() {
   return (
     <>
       <div className='transition-all duration-500 absolute top-[10%] left-4'>
-        <img
-          className='h-[190px] md:h-[350px] lg:h-[500px]'
+        <Image
           src='/tshirt_cropped.png'
-          style={{ objectFit: "cover" }}
+          alt='tshirt'
+          height={500}
+          width={500}
+          className='h-[190px] md:h-[350px] lg:h-[500px]'
         />
       </div>
       <div className='transition-all duration-500 absolute top-[10%] left-[7rem]'>
-        <img
-          className='h-[190px] md:h-[350px] lg:h-[500px]'
+        <Image
           src='/sweatshirt_cropped.png'
-          style={{ objectFit: "cover" }}
+          alt='sweatshirt'
+          height={500}
+          width={500}
+          className='h-[190px] md:h-[350px] lg:h-[500px]'
         />
       </div>
       <div className='transition-all duration-500  absolute top-[10%] left-[14rem]'>
-        <img
-          className='h-[190px] md:h-[350px] lg:h-[500px]'
+        <Image
           src='/hoodie_cropped.png'
-          style={{ objectFit: "cover" }}
+          alt='hoodie'
+          height={500}
+          width={500}
+          className='h-[190px] md:h-[350px] lg:h-[500px]'
         />
       </div>
       <div className='transition-all duration-500 absolute top-[10%] left-[26rem]'>
-        <img
-          className='h-[190px] md:h-[350px] lg:h-[500px]'
+        <Image
           src='/cargos_cropped.png'
-          style={{ objectFit: "cover" }}
+          alt='cargos'
+          height={500}
+          width={250}
+          className='h-[190px] md:h-[350px] lg:h-[500px]'
         />
       </div>
       <div className='transition-all duration-500 absolute top-[10%] left-[36rem]'>
-        <img
-          className='h-[190px] md:h-[350px] lg:h-[500px]'
+        <Image
           src='/jeans_cropped.png'
-          style={{ objectFit: "cover" }}
+          alt='jeans'
+          height={500}
+          width={250}
+          className='h-[190px] md:h-[350px] lg:h-[500px]'
         />
       </div>
       <div className='transition-all duration-500 absolute top-[10%] left-[45rem]'>
-        <img
-          className='h-[190px] md:h-[350px] lg:h-[500px]'
+        <Image
           src='/parachute_cropped.png'
-          style={{ objectFit: "cover" }}
+          alt='parachute'
+          height={500}
+          width={250}
+          className='h-[190px] md:h-[350px] lg:h-[500px]'
         />
       </div>
     </>

@@ -8,11 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
         whiskey: {
           "50": "#fbf7f1",
@@ -79,6 +74,20 @@ const config: Config = {
           "900": "#2b464e",
           "950": "#182e34",
         },
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideFromLeft: {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 1.5s linear",
+        slideFromLeft: "slideFromLeft 0.5s",
       },
     },
   },

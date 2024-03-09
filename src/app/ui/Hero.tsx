@@ -1,8 +1,8 @@
-import Clothes from "./Clothes";
+import Clothes from "@/app/ui/Clothes";
 
 export default function Hero() {
   return (
-    <section className='md:h-screen w-full flex flex-col justify-around test-concrete-900 dark:text-concrete-50 md:pt-12'>
+    <section className='md:h-screen w-full flex flex-col justify-around test-concrete-900 dark:text-concrete-50 md:pt-12 md:animate-fadeIn'>
       <div className='flex flex-col justify-center items-center gap-4 p-32'>
         <h1 className='text-3xl md:text-4xl lg:text-5xl'>
           your personal, digital wardrobe
