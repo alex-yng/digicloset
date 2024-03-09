@@ -41,7 +41,7 @@ export default function LoginForm() {
       </div>
       <button
         className='bg-ice-500 w-4/5 px-4 py-2 rounded-xl hover:bg-ice-600 transition-colors duration-300 animate-slideFromTop'
-        onClick={(e) => handleLogin}
+        onClick={(e) => handleLogin(e)}
       >
         <Link href='/dashboard'>Login</Link>
       </button>
