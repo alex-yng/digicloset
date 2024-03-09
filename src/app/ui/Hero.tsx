@@ -17,7 +17,7 @@ export default function Hero() {
           className='w-[400px] h-[262] md:w-[800px] md:h-[524px]'
         />
         <Link
-          href='/login'
+          href='/register'
           className='inline-flex items-center text-concrete-900 dark:text-white bg-ice-400 hover:bg-ice-500 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm md:text-xl mt-8 transition-colors duration-300 px-5 py-2.5 text-center dark:focus:ring-primary-900'
         >
           Get started
