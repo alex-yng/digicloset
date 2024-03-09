@@ -49,7 +49,7 @@ export default function LoginForm() {
         href='/register'
         className='text:xs md:text-sm text-concrete-900 dark:text-sage-50 dark:hover:text-concrete-300 transition-colors duration-300'
       >
-        <p>Don't have an acount? Register here.</p>
+        {`Don't have an acount? Register here.`}
       </Link>
     </form>
   );
