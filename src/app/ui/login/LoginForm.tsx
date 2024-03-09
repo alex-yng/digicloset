@@ -1,25 +1,46 @@
 "use client";
 
+import signIn from "@/firebase/auth/signin";
 import FormInput from "@/shared/FormInput";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function LoginForm() {
-  const handleLogin = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const router = useRouter();
+
+  const handleForm = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const { result, error } = await signIn(email, password);
+
+    if (error) {
+      return console.log(error);
+    }
+
+    // else successful
+    console.log(result);
+    return router.push("/dashboard");
   };
 
   return (
-    <form className='size-96 bg-concrete-600 dark:bg-slate-800 rounded-xl shadow-2xl flex flex-col p-4 gap-4 justify-center items-center'>
+    <form
+      onSubmit={handleForm}
+      className='size-96 bg-concrete-600 dark:bg-slate-800 rounded-xl shadow-2xl flex flex-col p-4 gap-4 justify-center items-center'
+    >
       <h1 className='text-5xl text-center animate-slideFromTop'>Sign In</h1>
       <h3 className='text-base text-center animate-slideFromTop'>
         Sign in and get access your wardrobe now
       </h3>
       <FormInput
-        id='username'
-        type='text'
-        placeholder='Username'
+        id='email'
+        type='email'
+        placeholder='Email'
         required={true}
         className='animate-slideFromTop'
+        onChange={(e) => setEmail(e.target.value)}
       />
       <FormInput
         id='password'
@@ -27,6 +48,7 @@ export default function LoginForm() {
         placeholder='Password'
         required={true}
         className='animate-slideFromTop'
+        onChange={(e) => setPassword(e.target.value)}
       />
       <div className='flex items-center gap-2 hover:text-concrete-300 transition-colors duration-300 animate-slideFromTop'>
         <input
@@ -40,10 +62,10 @@ export default function LoginForm() {
         </label>
       </div>
       <button
+        type='submit'
         className='bg-ice-500 w-4/5 px-4 py-2 rounded-xl hover:bg-ice-600 transition-colors duration-300 animate-slideFromTop'
-        onClick={(e) => handleLogin(e)}
       >
-        <Link href='/dashboard'>Login</Link>
+        Login
       </button>
       <Link
         href='/register'

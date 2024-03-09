@@ -1,5 +1,6 @@
 import SideNav from "@/app/ui/dashboard/SideNav";
 import MobileNav from "../ui/dashboard/MobileNav";
+import { AuthContextProvider } from "@/context/AuthContext";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
