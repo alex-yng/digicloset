@@ -13,5 +13,5 @@ export default function Dashboard() {
     if (user == null) router.push("/");
   }, [user]);
 
-  return <h1 className='text-white'>{`hello ${username}!`}</h1>;
+  return <h1 className='text-white text-4xl'>{`hello ${username}!`}</h1>;
 }
