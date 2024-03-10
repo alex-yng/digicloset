@@ -6,6 +6,7 @@ export default function SideNav() {
     { name: "Dashboard", href: "/dashboard" },
     { name: "Closet", href: "/dashboard/inventory" },
     { name: "Outfits", href: "/dashboard/outfits" },
+    { name: "Settings", href: "/dashboard/settings" },
   ];
 
   return (

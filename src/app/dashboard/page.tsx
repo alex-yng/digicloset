@@ -3,15 +3,15 @@
 import { useEffect } from "react";
 import { useAuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import Header from "../ui/dashboard/Header";
 
 export default function Dashboard() {
   const { user }: any = useAuthContext();
   const router = useRouter();
-  const username = user?.email;
 
   useEffect(() => {
-    if (user == null) router.push("/");
+    if (user == null) router.push("/login");
   }, [user]);
 
-  return <h1 className='text-white text-4xl'>{`hello ${username}!`}</h1>;
+  return <Header email={user.email} />;
 }

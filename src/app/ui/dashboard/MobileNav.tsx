@@ -5,6 +5,7 @@ export default function MobileNav() {
     { name: "Dash", href: "/dashboard" },
     { name: "Closet", href: "/dashboard/inventory" },
     { name: "Outfits", href: "/dashboard/outfits" },
+    { name: "Settings", href: "/dashboard/settings" },
     { name: "Home", href: "/" },
   ];
 

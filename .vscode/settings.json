@@ -1,0 +1,7 @@
+{
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": true
+}
