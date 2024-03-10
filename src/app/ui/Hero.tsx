@@ -15,6 +15,7 @@ export default function Hero() {
           width={2115}
           height={1386}
           className='w-[400px] h-[262] md:w-[800px] md:h-[524px]'
+          priority={true}
         />
         <Link
           href='/register'
