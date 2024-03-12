@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useAuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
-import Header from "../ui/dashboard/Header";
+import ClothesCard from "../ui/dashboard/ClothesCard";
 
 export default function Dashboard() {
   const { user }: any = useAuthContext();
@@ -13,5 +13,9 @@ export default function Dashboard() {
     if (user == null) router.push("/login");
   }, [user]);
 
-  return <Header email={user.email} />;
+  return (
+    <>
+      <h1 className='text-white text-4xl'>{user.email}</h1>
+    </>
+  );
 }

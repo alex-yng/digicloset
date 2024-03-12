@@ -30,8 +30,8 @@ export default function RegisterForm() {
       onSubmit={handleForm}
       className='min-h-96 max-w-96 bg-concrete-600 dark:bg-slate-800 rounded-xl shadow-2xl flex flex-col p-4 gap-4 justify-center items-center'
     >
-      <h1 className='text-5xl text-center animate-slideFromTop'>Register</h1>
-      <h3 className='text-base text-center animate-slideFromTop'>
+      <h1 className='text-5xl text-center '>Register</h1>
+      <h3 className='text-base text-center '>
         Register and get access your digital wardrobe now
       </h3>
       <FormInput
@@ -39,7 +39,7 @@ export default function RegisterForm() {
         type='email'
         placeholder='Email'
         required={true}
-        className='animate-slideFromTop'
+        className=''
         onChange={(e) => setEmail(e.target.value)}
       />
       <FormInput
@@ -47,11 +47,11 @@ export default function RegisterForm() {
         type='password'
         placeholder='Password'
         required={true}
-        className='animate-slideFromTop'
+        className=''
         onChange={(e) => setPassword(e.target.value)}
       />
       <button
-        className='bg-ice-500 w-4/5 px-4 py-2 rounded-xl hover:bg-ice-600 transition-colors duration-300 animate-slideFromTop'
+        className='bg-ice-500 w-4/5 px-4 py-2 rounded-xl hover:bg-ice-600 transition-colors duration-300 '
         type='submit'
       >
         Register

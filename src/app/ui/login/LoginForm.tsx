@@ -30,8 +30,8 @@ export default function LoginForm() {
       onSubmit={handleForm}
       className='size-96 bg-concrete-600 dark:bg-slate-800 rounded-xl shadow-2xl flex flex-col p-4 gap-4 justify-center items-center'
     >
-      <h1 className='text-5xl text-center animate-slideFromTop'>Sign In</h1>
-      <h3 className='text-base text-center animate-slideFromTop'>
+      <h1 className='text-5xl text-center '>Sign In</h1>
+      <h3 className='text-base text-center '>
         Sign in and get access your wardrobe now
       </h3>
       <FormInput
@@ -39,7 +39,7 @@ export default function LoginForm() {
         type='email'
         placeholder='Email'
         required={true}
-        className='animate-slideFromTop'
+        className=''
         onChange={(e) => setEmail(e.target.value)}
       />
       <FormInput
@@ -47,10 +47,10 @@ export default function LoginForm() {
         type='password'
         placeholder='Password'
         required={true}
-        className='animate-slideFromTop'
+        className=''
         onChange={(e) => setPassword(e.target.value)}
       />
-      <div className='flex items-center gap-2 hover:text-concrete-300 transition-colors duration-300 animate-slideFromTop'>
+      <div className='flex items-center gap-2 hover:text-concrete-300 transition-colors duration-300 '>
         <input
           type='checkbox'
           name='remember'
@@ -63,7 +63,7 @@ export default function LoginForm() {
       </div>
       <button
         type='submit'
-        className='bg-ice-500 w-4/5 px-4 py-2 rounded-xl hover:bg-ice-600 transition-colors duration-300 animate-slideFromTop'
+        className='bg-ice-500 w-4/5 px-4 py-2 rounded-xl hover:bg-ice-600 transition-colors duration-300 '
       >
         Login
       </button>
